@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<h1>Crystal Collector!</h1>
+
+<div id="text-box">
+    <p>A random number will be generated at the start of the game.</p>
+    
+    <p>There are four crystals below. Each crystal has a random value
+        set to a specific amount of points.  Clicking each crystal will 
+        add points to your total score.
+    </p>
+
+    <p>Win the game by matching your total score to the random number 
+        generated. Be careful, if your total points goes above the generated 
+        number, you lose. 
+    </p>
+    <p>Each time a new game starts, the value of the crystals and random 
+        number will be changed.
+    </p>
+
+</div>
+
+<div id="random-number-box">
+        
+    </div>
+    
+    <div id="score-box">
+       <div id="wins"> Wins: 0 </div>
+        <br>
+        <div id="losses"> Losses: 0 </div> 
+    </div>
+
+
+<div id="all-crystals">
+
+    <div id="purpleCrystal">
+        <img class="crystal-image" src="https://p.luckyretail.com/Uploadfile/20160530/002464/002464.jpg" alt="purple crystal" width="150px" height="150px">   
+    </div> 
+    <div id="blueCrystal">
+        <img class="crystal-image" src="http://cdn.playbuzz.com/cdn/7a5d7935-6177-4be8-8b72-2a95ad2bcdfe/3b295cc9-7b5e-412f-8b1f-8547edd8e66b.jpg" alt="blue crystal" width="150px" height="150px">
+    </div> 
+    <div id="clearCrystal">
+        <img class="crystal-image" src="http://www.crystalcleaningofohio.com/portals/7/Images/3.jpg" alt="clear crystal" width="150px" height="150px">
+    </div>
+    <div id="greenCrystal">
+        <img class="crystal-image" src="https://vignette.wikia.nocookie.net/finalfantasy/images/0/0e/XII_life_crystalbug_render.png/revision/latest?cb=20120723034602" alt="green crystal" width="150px" height="150px">
+    </div>
+
+</div>
+
+<div id="user-score">
+
+    Your total score is:
+</div>
+
+<div id="user-number-score">
+    0
+</div>
+
+
+
+    
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

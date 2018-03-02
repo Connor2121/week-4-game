@@ -1,0 +1,50 @@
+h1 {
+    color: blue;
+}
+
+
+#text-box {
+    color: black;
+    background-color: beige;
+}
+
+#random-number-box {
+    margin-bottom: 10px;
+    height: 100px;
+    width: 250px;
+    background-color: beige;
+    
+    
+    
+}
+
+#score-box {
+    height: 100px;
+    width: 75px;
+    background-color: beige;
+    
+}
+
+
+#purpleCrystal, #blueCrystal, #clearCrystal, #greenCrystal{
+    float: left;
+    
+
+}
+
+
+
+#user-score {
+    clear: both;
+    overflow: auto;
+    height: 25px;
+    background-color: beige;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+#user-number-score {
+    height: 100px;
+    width: 250px;
+    background-color: beige;
+}
