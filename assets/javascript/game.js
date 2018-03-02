@@ -29,12 +29,10 @@ $(document).ready(function() {
         $('#user-number-score').text(userScore);
 
         if (userScore === randomNumber) {
-            alert('you win');
             wins++;
         }
     
-        else if (userScore >= randomNumber) {
-            alert('you lose');
+         if (userScore >= randomNumber) {
             losses++
         }
      });
@@ -45,12 +43,10 @@ $(document).ready(function() {
 
 
         if (userScore === randomNumber) {
-            alert('you win');
             wins++
         }
     
-        else if (userScore >= randomNumber) {
-            alert('you lose');
+         if (userScore >= randomNumber) {
             losses++
         }
      });
@@ -60,12 +56,10 @@ $(document).ready(function() {
         $('#user-number-score').text(userScore);
 
         if (userScore === randomNumber) {
-            alert('you win');
             wins++
         }
     
-        else if (userScore >= randomNumber) {
-            alert('you lose');
+         if (userScore >= randomNumber) {
             losses++
         }
      });
@@ -75,18 +69,21 @@ $(document).ready(function() {
         $('#user-number-score').text(userScore);
 
         if (userScore === randomNumber) {
-            alert('you win');
-            wins++
-        }
+            wins++;
+           
+        } 
     
-        else if (userScore >= randomNumber) {
-            alert('you lose');
-            losses++
+         if (userScore >= randomNumber) {
+            losses++;
+            
         }
      });
 
-     $('#wins').text(wins);
-     $('#losses').text(losses);
+     var html =
+     '<p>Wins: ' + wins + '<p>' +
+     '<p>Losses: ' + losses + '<p>'
+
+     $('#score-box').innerHTML = html;
 
 });
 
