@@ -12,16 +12,7 @@ $(document).ready(function() {
 
     
 
-    var reset = function(){
-       
-        randomNumber = Math.floor(Math.random() * 101 + 19);
-         $('#random-number-box').text(randomNumber);
-         userScore = 0;
-        $("#user-number-score").text(userScore);
-         
-       
-        };
-     
+    
     
 
     
@@ -34,6 +25,17 @@ $(document).ready(function() {
     var value2 = Math.floor(Math.random() * 11 +1);
     var value3 = Math.floor(Math.random() * 11 +1);
     var value4 = Math.floor(Math.random() * 11 +1);
+
+
+    // resets game after win or loss
+    var reset = function(){
+       
+        randomNumber = Math.floor(Math.random() * 101 + 19);
+         $('#random-number-box').text(randomNumber);
+         userScore = 0;
+        $("#user-number-score").text(userScore);
+    };
+     
     
 
    
