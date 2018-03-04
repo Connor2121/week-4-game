@@ -10,6 +10,8 @@ $(document).ready(function() {
     var wins = 0;
     var losses = 0;
 
+    
+
     // var crystalValue = [10, 5, 3, 7];
     // for (var i = 0; i < crystalValue.length; i++){
      // var randomizeValue = crystalValue[Math.round(Math.random())];
@@ -21,8 +23,9 @@ $(document).ready(function() {
 
    
    
-   
+    
      //$("#all-crystals").on("click", ".crystal-image", function() {
+
         
      $('#purpleCrystal').on('click', function() {
         userScore = userScore + value1;
@@ -30,10 +33,12 @@ $(document).ready(function() {
 
         if (userScore === randomNumber) {
             wins++;
+            $("#wins").html("Wins: " + wins);
         }
     
-         if (userScore >= randomNumber) {
+         if (userScore > randomNumber) {
             losses++
+            $("#losses").html("Losses: " + losses);
         }
      });
 
@@ -43,11 +48,13 @@ $(document).ready(function() {
 
 
         if (userScore === randomNumber) {
-            wins++
+            wins++;
+            $("#wins").html("Wins: " + wins);
         }
     
-         if (userScore >= randomNumber) {
+         if (userScore > randomNumber) {
             losses++
+            $("#losses").html("Losses" + losses);
         }
      });
 
@@ -56,11 +63,13 @@ $(document).ready(function() {
         $('#user-number-score').text(userScore);
 
         if (userScore === randomNumber) {
-            wins++
+            wins++;
+            $("#wins").html("Wins: " + wins);
         }
     
-         if (userScore >= randomNumber) {
+         if (userScore > randomNumber) {
             losses++
+            $("#losses").html("Losses: " + losses);
         }
      });
 
@@ -70,20 +79,13 @@ $(document).ready(function() {
 
         if (userScore === randomNumber) {
             wins++;
+            $("#wins").html("Wins: " + wins);
            
         } 
     
-         if (userScore >= randomNumber) {
+         if (userScore > randomNumber) {
             losses++;
-            
+            $("#losses").html("Losses: " + losses);
         }
      });
-
-     var html =
-     '<p>Wins: ' + wins + '<p>' +
-     '<p>Losses: ' + losses + '<p>'
-
-     $('#score-box').innerHTML = html;
-
 });
-
