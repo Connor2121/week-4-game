@@ -12,21 +12,36 @@ $(document).ready(function() {
 
     
 
-    // var crystalValue = [10, 5, 3, 7];
-    // for (var i = 0; i < crystalValue.length; i++){
+    var reset = function(){
+       
+        randomNumber = Math.floor(Math.random() * 101 + 19);
+         $('#random-number-box').text(randomNumber);
+         userScore = 0;
+        $("#user-number-score").text(userScore);
+         
+       
+        };
+     
+    
+
+    
+    // for (var i = 0; i < ; i++){
      // var randomizeValue = crystalValue[Math.round(Math.random())];
+    
+    // random value for each crystal
+  
     var value1 = Math.floor(Math.random() * 11 +1);
     var value2 = Math.floor(Math.random() * 11 +1);
     var value3 = Math.floor(Math.random() * 11 +1);
     var value4 = Math.floor(Math.random() * 11 +1);
-
+    
 
    
    
     
      //$("#all-crystals").on("click", ".crystal-image", function() {
 
-        
+        // on click functions for all 4 crystals...Not Dry!
      $('#purpleCrystal').on('click', function() {
         userScore = userScore + value1;
         $('#user-number-score').text(userScore);
@@ -34,11 +49,13 @@ $(document).ready(function() {
         if (userScore === randomNumber) {
             wins++;
             $("#wins").html("Wins: " + wins);
+            reset();
         }
     
          if (userScore > randomNumber) {
             losses++
             $("#losses").html("Losses: " + losses);
+            reset();
         }
      });
 
@@ -50,11 +67,13 @@ $(document).ready(function() {
         if (userScore === randomNumber) {
             wins++;
             $("#wins").html("Wins: " + wins);
+            reset();
         }
     
          if (userScore > randomNumber) {
             losses++
             $("#losses").html("Losses" + losses);
+            reset();
         }
      });
 
@@ -65,11 +84,13 @@ $(document).ready(function() {
         if (userScore === randomNumber) {
             wins++;
             $("#wins").html("Wins: " + wins);
+            reset();
         }
     
          if (userScore > randomNumber) {
             losses++
             $("#losses").html("Losses: " + losses);
+            reset();
         }
      });
 
@@ -80,12 +101,16 @@ $(document).ready(function() {
         if (userScore === randomNumber) {
             wins++;
             $("#wins").html("Wins: " + wins);
+            reset();
            
         } 
     
          if (userScore > randomNumber) {
             losses++;
             $("#losses").html("Losses: " + losses);
+            reset();
         }
      });
+
+    
 });
